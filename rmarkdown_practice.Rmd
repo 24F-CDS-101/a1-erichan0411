@@ -1,10 +1,7 @@
 ---
-title: "Assignment 1: R Markdown practice"
+title: 'Assignment 1: R Markdown practice'
 author: "HyeongJoon Han"
 date: "`r Sys.Date()`"
-documentclass: article
-geometry: margin=1in
-fontsize: 11pt
 output:
   pdf_document:
     toc: false
@@ -22,13 +19,46 @@ output:
     number_sections: true
     smart: true
     dev: svg
+  word_document:
+    toc: false
+geometry: margin=1in
+fontsize: 11pt
+documentclass: article
 urlcolor: blue
 ---
 
 <!-- Write your Markdown below this line -->
 
-##Hello World!
+1. How the Course Works
+
+The weekly interactive tutorials must be completed by the start of each week. Then each weekly assignment will be due at the end of the week.
+
+2. Course Goals
+
+By the end of the course, students will be able to:
+
+• Use GitHub for creating a reproducible research document
+  
+      – My GitHub Username is: erichan0411
+
+• Obtain, clean, transform and visualize a dataset using the R programming Language.
+
+• Interpret and predict dataset trends using statistical inference and models.
+
+• Critically examine and interpret statistical claims reported in mass media.
+
+3. Including Code
+
+3.1 Running R code in a code chunk
 
 x <- 2 + 4
+
 x + 9
+
+##[1] 15
+
+The output of first line of code is not printed out because it is assigned to a variable instead.The second line of output is printed out instead, but this means that the calculated value has not been saved for future use.
+
+3.2 Displaying Graphs
+
 plot(x = iris$Sepal.Length, y = iris$Sepal.Width)
